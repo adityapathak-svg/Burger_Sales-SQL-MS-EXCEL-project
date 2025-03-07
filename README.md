@@ -24,37 +24,6 @@ The project aims to calculate the following KPIs using SQL queries and Excel:
 
 Total Revenue: The total revenue generated from all burger sales.
 
-SQL Query:
-
-SELECT SUM(totalprice) AS total_revenue FROM sales;
-Average Order Value (AOV): The average total order value for all orders.
-
-SQL Query:
-
-SELECT AVG(totalprice) AS avg_order_value FROM sales;
-Total Burger Sold: The total number of burgers sold across all orders.
-
-SQL Query:
-
-SELECT SUM(quantity) AS total_burger_sold FROM sales;
-Total Orders: The total number of orders placed.
-
-SQL Query:
-
-SELECT COUNT(DISTINCT orderid) AS total_orders FROM sales;
-Average Burger Per Order: The average number of burgers ordered per order.
-
-SQL Query:
-
-SELECT AVG(quantity) AS avg_burger_per_order FROM sales;
-Data Analysis with SQL
-The data is queried using SQL to extract relevant metrics for each KPI. SQL provides an efficient way to summarize and analyze large volumes of sales data.
-
-Total Revenue is calculated by summing the totalprice field.
-Average Order Value is calculated by averaging the totalprice per order.
-Total Burger Sold is obtained by summing the quantity of all burgers sold.
-Total Orders are counted by finding distinct orderid values.
-Average Burger Per Order is computed by averaging the quantity field for all orders.
 Data Analysis with Excel
 Once the SQL queries return the necessary data, it is imported into Excel for deeper analysis. Pivot Tables, KPIs, and Charts are used to visualize the data and extract actionable insights.
 
